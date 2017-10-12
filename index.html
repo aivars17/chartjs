@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+	<canvas id="myChart" width="400" height="400"></canvas>
+</div>
+	<div class="col">
+		<form>
+
+			<label>Vardas</label>
+			<input class="row" type="text" name="name" id="box_name">
+			<label>Amžius</label>
+			<input class="row" type="text" name="name" id="box_age">
+			<label>Atlygininmas</label>
+			<input class="row" type="text" name="name" id="box_m">
+		</form>
+		<button type="button" class="btn btn-danger" onclick="bam_add();" name="submit">Submit</button>
+		<button type="button" onclick="bam_remove();" name="remove">remove</button>
+		<button type="button" onclick="bam_clear();" name="remove">clear</button>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<canvas id="myRadar" width="400" height="400"></canvas>
+		</div>
+	</div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
